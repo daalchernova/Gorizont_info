@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('../fonts/TTForsTrial-DmBd.eot');
+    src: url('../fonts/TTForsTrial-DmBd.eot') format('embedded-opentype'),
+        url('../fonts/TTForsTrial-DmBd.woff2') format('woff2'),
+        url('../fonts/TTForsTrial-DmBd.woff') format('woff'),
+        url('../fonts/TTForsTrial-DmBd.ttf') format('truetype'),
+        url('../fonts/TTForsTrial-DmBd.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Neoris Trial';
+    src: url('../fonts/TTNeorisTrial-Md.eot');
+    src: url('../fonts/TTNeorisTrial-Md.eot') format('embedded-opentype'),
+        url('../fonts/TTNeorisTrial-Md.woff2') format('woff2'),
+        url('../fonts/TTNeorisTrial-Md.woff') format('woff'),
+        url('../fonts/TTNeorisTrial-Md.ttf') format('truetype'),
+        url('../fonts/TTNeorisTrial-Md.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Neoris Trial';
+    src: url('../fonts/TTNeorisTrial-Lt.eot');
+    src: url('../fonts/TTNeorisTrial-Lt.eot') format('embedded-opentype'),
+        url('../fonts/TTNeorisTrial-Lt.woff2') format('woff2'),
+        url('../fonts/TTNeorisTrial-Lt.woff') format('woff'),
+        url('../fonts/TTNeorisTrial-Lt.ttf') format('truetype'),
+        url('../fonts/TTNeorisTrial-Lt.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --primary-color: #FFFCF8;
+    --secondary-color: #000000;
+    --primary-font: 'TT Fors Trial';
+    --secondary-font: 'TT Neoris Trial';
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(../images/bg_kamchatka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    
+    
+    &__head {
+        display: flex;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 47px;
+        min-width: 1327px ;
+        min-height: 81px;
+        padding-right: 74px;
+    }
+    &__logo {
+        width: 183px;
+        padding-left: 60px;
+    }
+
+    &__menu {
+        display: flex;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin-left: 50px;
+                a {
+                    color: var(--secondary-color);
+                    font-size: 17px;
+                    text-decoration: none;
+                    font-family: var(--secondary-font);
+                    letter-spacing: 3px;
+                  }
+                }
+            }
+        }
+    
+    &__text {
+        display: flex;
+        justify-content: left;
+        padding-top: 450px;
+
+    }
+    &__title {
+        color: var(--primary-color);
+        font-family: var(--primary-font);
+        font-size: 200px;
+        text-align: left;
+        
+    }
+    a:hover { text-decoration: underline;}
+    }
+     .figure {
+        background-color: var(--primary-color);
+        border-radius: 50px;
+        min-height: 97px;
+        min-width: 1440px;
+        margin-top: -3%;
+     }
+     .information {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: var(--primary-font);
+        &__container {
+            max-width: 1440px;
+
+        }
+        &__title {
+            font-family: var(--secondary-font);
+            padding: 133px 0 40px 70px;;
+            font-size: 50px;
+            max-width: 600px;
+        }
+        &__description {
+            font-family: var(--secondary-font);
+            padding: 0 0 90px 70px;
+            max-width: 921px;
+            font-size: 25px;
+            font-weight: 300;
+        }
+     }
+     .sights {
+        background-color: var(--primary-color);
+        display: flex;
+            justify-content: right;
+            flex-direction: column;
+            align-items: end;
+        &__container {
+            max-width: 1440px;
+            
+        }
+        &__title {
+            padding: 133px 0 106px 0;
+            text-align: left;
+            font-size: 50px;
+            font-family: var(--secondary-font);
+            padding-left: 200px;
+        }
+        &__card {
+            display: flex;
+            flex-direction: row;
+            padding: 40px 0 40px 0;
+            gap: 40px;
+        }
+        &__title_mini{ 
+            font-size: 40px;
+            font-family: var(--secondary-font);
+        }
+        
+        
+        &__description1 {
+            max-width: 682px;
+            font-size: 25px;
+            font-weight: 300;
+            font-family: var(--secondary-font);
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+        }
+        &__description2 {
+            max-width: 682px;
+            font-size: 25px;
+            font-weight: 300;
+            font-family: var(--secondary-font);
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+        }
+        &__description3 {
+            max-width: 682px;
+            font-size: 25px;
+            font-weight: 300;
+            font-family: var(--secondary-font);
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+        &__image1 {
+            width: 598px;
+            height: 397px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(../images/pk.png);
+        }
+         &__image2 {
+            width: 598px;
+            height: 397px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(../images/dg.png);
+        }
+         &__image3 {
+            width: 598px;
+            height: 397px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url(../images/as.png);
+        }
+
+     }
+     .accessories {
+        background-color: var(--primary-color);
+        height: 809px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            padding-bottom: 20px;
+            background-color: #404F57;
+            border-radius: 50px;
+            width: 1283px;
+            height: 695px;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+        &__title {
+            padding: 72px 0 72px 0;
+            text-align: center;
+            font-size: 50px;
+            font-family: var(--primary-font);
+            color: var(--primary-color);
+        }
+
+     }
+     .end {
+        height: 757px;
+        background-image: url(../images/bg_end.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__container {
+            display: flex;
+            width: 1440px;
+            justify-content: left;
+            align-items: center;
+           
+        }
+        &__text {
+            max-width: 760px;
+            font-size: 25px;
+            font-weight: 300;
+            font-family: var(--secondary-font);
+            padding-left: 150px;
+        }
+     }
+     .footer {
+        display: flex;
+        background-color: #404F57;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+
+        &__container {
+            display: flex;
+        }
+        &__logo_hse {
+            padding-right: 300px;
+        }
+        &__contacts {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: var(--secondary-font);
+            color: var(--primary-color);
+            font-size: 30px;
+            font-weight: 300;
+            gap: 10px;
+            max-width: 264px;
+        }
+    }
+     .figure2 {
+        background-color: #404F57;
+        border-radius: 50px;
+        min-height: 97px;
+        min-width: 1440px;
+        margin-top: -3%;
+        
+    }
